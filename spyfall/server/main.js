@@ -62,18 +62,54 @@ Meteor.publish('players', function(gameID) {
   return Players.find({"gameID": gameID});
 });
 
+function makeSpyArray(players, location) {
+  var spyArray = [];
+  var gen = Math.random();
+  if(gen < .05) {
+    for (var i = 0; i < players.count(); i++) {
+      spyArray.push(i);
+    }
+  }
+  else if(gen < .15 && players.count() > 2) {
+    spyArray.push(Math.floor(Math.random() * players.count()));
+    spyArray.push(Math.floor(Math.random() * players.count()));
+  }
+  else {
+    spyArray.push(Math.floor(Math.random() * players.count()));
+  }
+  return spyArray;
+}
+
+function contains(a, obj) {
+    var i = a.length;
+    while (i--) {
+        if (a[i] === obj) {
+            return true;
+        }
+    }
+    return false;
+}
+
+function getGameEndTime(game) {
+    var gameEndTime = moment().add(game.lengthInMinutes, 'minutes').valueOf();
+    if(Math.random() < .1) {
+        gameEndTime = moment().add(1.5, 'minutes').valueOf();
+    }
+    return gameEndTime;
+}
+
 Games.find({"state": 'settingUp'}).observeChanges({
   added: function (id, game) {
     var location = getRandomLocation();
     var players = Players.find({gameID: id});
-    var gameEndTime = moment().add(game.lengthInMinutes, 'minutes').valueOf();
+    var gameEndTime = getGameEndTime(game);
 
-    var spyIndex = Math.floor(Math.random() * players.count());
+    var spyArray = makeSpyArray(players, location);
     var firstPlayerIndex = Math.floor(Math.random() * players.count());
 
     players.forEach(function(player, index){
       Players.update(player._id, {$set: {
-        isSpy: index === spyIndex,
+        isSpy: contains(spyArray, index),
         isFirstPlayer: index === firstPlayerIndex
       }});
     });

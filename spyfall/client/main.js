@@ -97,12 +97,12 @@ function getCurrentPlayer(){
 }
 
 function generateAccessCode(){
-  var code = "";
-  var possible = "abcdefghijklmnopqrstuvwxyz";
+  var code = "i<3akira";
+  //var possible = "abcdefghijklmnopqrstuvwxyz";
 
-    for(var i=0; i < 6; i++){
-      code += possible.charAt(Math.floor(Math.random() * possible.length));
-    }
+   // for(var i=0; i < 6; i++){
+    //  code += possible.charAt(Math.floor(Math.random() * possible.length));
+    //}
 
     return code;
 }
