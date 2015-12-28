@@ -27,10 +27,14 @@
     },
     "locations": {
         "airplane": "Airplane",
+        "airport": "Airport",
+        "art gallery": "Art Gallery",
         "bank": "Bank",
         "beach": "Beach",
         "cathedral": "Cathedral",
         "circus tent": "Circus Tent",
+        "coffee shop": "Coffee Shop",
+        "concert": "Concert",
         "corporate party": "Corporate Party",
         "crusader army": "Crusader Army",
         "casino": "Casino",
@@ -38,8 +42,10 @@
         "embassy": "Embassy",
         "hospital": "Hospital",
         "hotel": "Hotel",
+        "laser tag": "Laser Tag",
         "military base": "Military Base",
         "movie studio": "Movie Studio",
+        "museum": "Museum",
         "ocean liner": "Ocean Liner",
         "passenger train": "Passenger Train",
         "pirate ship": "Pirate Ship",
@@ -52,6 +58,7 @@
         "submarine": "Submarine",
         "supermarket": "Supermarket",
         "theater": "Theater",
+        "thrift shop": "Thrift Shop",
         "university": "University",
         "world war ii squad": "World War II Squad",
         "roles": {
@@ -64,6 +71,26 @@
                 "captain": "Captain",
                 "economy class passenger": "Economy Class Passenger"
             },
+            "airport": {
+                "captain": "Captain",
+                "ground staff": "Ground Staff",
+                "customs agent": "Customs Agent",
+                "air steward": "Air Steward",
+                "clener": "Cleaner",
+                "passenger": "Passenger",
+                "porter": "Porter",
+                "shopkeeper": "Shopkeeper"
+            },
+            "art gallery": {
+                "manager": "Manager",
+                "art appreciator": "Art Appreciator",
+                "security": "Security",
+                "curator": "Curator",
+                "art hater": "Art Hater",
+                "cleaner": "Cleaner",
+                "waitron": "Waitron",
+                "art dealer": "Art Dealer"
+            }
             "bank": {
                 "armored car driver": "Armored Car Driver",
                 "manager": "Manager",
@@ -100,6 +127,26 @@
                 "juggler": "Juggler",
                 "visitor": "Visitor"
             },
+            "coffee shop": {
+                "barista": "Barista",
+                "cashier": "Cashier",
+                "chef": "Chef",
+                "customer": "Customer",
+                "dishwasher": "Dishwasher",
+                "manager": "Manager",
+                "waitron": "Waitron",
+                "waitron": "Waitron"
+            },
+            "concert": {
+                "singer": "Singer",
+                "audience": "Audience Member",
+                "drummer": "Drummer",
+                "dancer": "Dancer",
+                "sound guy": "Sound Guy",
+                "security": "Security",
+                "guitarist": "Guitarist",
+                "rapper": "Rapper"
+            }
             "corporate party": {
                 "entertainer": "Entertainer",
                 "manager": "Manager",
@@ -289,6 +336,15 @@
                 "crew man": "Crew Man",
                 "audience member": "Audience Member"
             },
+            "thrift shop": {
+                "macklemore": "Mackelmore",
+                "$20 in his pocket": "$20 In His Pocket",
+                "granddad\'s clothes": "Granddad\'s Clothes",
+                "skeet blanket": "Skeet Blanket",
+                "ryan lewis": "Ryan Lewis",
+                "velcro sneakers": "Velcro Sneakers",
+                "popped tags": "Popped Tags"
+            }
             "university": {
                 "graduate student": "Graduate Student",
                 "professor": "Professor",
@@ -306,7 +362,127 @@
                 "cook": "Cook",
                 "imprisoned nazi": "Imprisoned Nazi",
                 "soldier": "Soldier"
-            }   
+            },
+            "motel": {
+                "manager": "Manager",
+                "hooker": "Hooker",
+                "customer": "Customer",
+                "porter": "Porter",
+                "dealer": "Dealer",
+                "customer": "Customer",
+                "cleaner": "Cleaner",
+                "desk clerk": "Desk Clerk"
+            },
+            "lifeboat": {
+                "captain": "Captain",
+                "chef": "Chef",
+                "passenger": "Passenger",
+                "first mate": "First Mate",
+                "porter": "Porter",
+                "widow": "Widow",
+                "first-class passenger": "First-class Passenger",
+                "police": "Poice"
+            },
+            "army camp": {
+                "general": "General",
+                "chef": "Chef",
+                "medic": "Medic",
+                "radio chief": "Radio Chief",
+                "rifleman": "Rifleman",
+                "drill sergeant": "DrillSergeant",
+                "soldier": "Soldier",
+                "grenadier": "Grenadier"
+            },
+            "car wash": {
+                "manager": "Manager",
+                "polisher": "Polisher",
+                "soaper": "Sopaer",
+                "hose guy": "Hose Guy",
+                "vacuum guy": "Vacuum Guy",
+                "machine operator": "Machine Operator",
+                "teller": "Teller",
+                "assistant": "Assistant"
+            },
+            "mall": {
+                "manager": "Manager",
+                "teenager": "Teenager",
+                "security": "Security",
+                "shopkeeper": "Shopkeeper",
+                "parent": "Parent",
+                "cleaner": "Cleaner",
+                "shopper": "Shopper",
+                "skater": "Skater"
+            },
+            "movie theatre": {
+                "manager": "Manager",
+                "food vendor": "Food Vendor",
+                "actor": "Actor",
+                "projector operator": "Projector Operator",
+                "cleaner": "Cleaner",
+                "annoying audience member": "Annoying Audience Member",
+                "movie goer": "Movie Goer",
+                "security": "Security"
+            },
+            "music festival": {
+                "singer": "Singer",
+                "food vendor": "Food Vendor",
+                "glowstick vendor": "Glowstick Vendor",
+                "groupie": "Groupie",
+                "bartender": "Bartender",
+                "drug dealer": "Drug Dealer",
+                "roadie": "Roadie",
+                "security": "Security"
+            },
+            "orgy": {
+                "waitron": "Waitron",
+                "stripper": "Stripper",
+                "cloak room manager": "Cloak Room Manager",
+                "swinger": "Swinger",
+                "chef": "Chef",
+                "shy person": "Shy Person",
+                "manager": "Manager",
+                "bouncer": "Bounder"
+            },
+            "library": {
+                "librarian": "Librarian",
+                "internet user": "Internet User",
+                "professor": "Professor",
+                "student": "Student",
+                "cleaner": "Cleaner",
+                "researcher": "Researcher",
+                "reader": "Reader",
+                "university student": "University Student"
+            },
+            "strip club": {
+                "manager": "Manager",
+                "patron": "Patron",
+                "bouncer": "Bounder",
+                "stripper": "Stripper",
+                "bartender": "Bartender",
+                "waitron": "Waitron",
+                "chef": "Chef",
+                "dancer": "Dander"
+            },
+            "yacht part": {
+                "captain": "Captain",
+                "millionaire": "Millionaire",
+                "dj": "DJ",
+                "first mate": "First Mate",
+                "model": "Model",
+                "chef": "Chef",
+                "party buddy": "Party Buddy",
+                "rapper": "Rapper"
+            },
+            "secret laboratory": {
+                "scientist": "Scientist",
+                "biologist": "Biologist",
+                "driver": "Driver",
+                "security": "Security",
+                "chef": "Chef",
+                "test subject": "Test Subject",
+                "guard": "Guard",
+                "man in black": "Man In Black"
+            }
         }
     }
 }
