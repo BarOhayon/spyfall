@@ -90,7 +90,7 @@
                 "cleaner": "Cleaner",
                 "waitron": "Waitron",
                 "art dealer": "Art Dealer"
-            }
+            },
             "bank": {
                 "armored car driver": "Armored Car Driver",
                 "manager": "Manager",
@@ -146,7 +146,7 @@
                 "security": "Security",
                 "guitarist": "Guitarist",
                 "rapper": "Rapper"
-            }
+            },
             "corporate party": {
                 "entertainer": "Entertainer",
                 "manager": "Manager",
@@ -344,7 +344,7 @@
                 "ryan lewis": "Ryan Lewis",
                 "velcro sneakers": "Velcro Sneakers",
                 "popped tags": "Popped Tags"
-            }
+            },
             "university": {
                 "graduate student": "Graduate Student",
                 "professor": "Professor",

@@ -22,7 +22,7 @@ locations = [
       'locations.roles.airport.passenger',
       'locations.roles.airport.porter',
       'locations.roles.airport.shopkeeper'
-      ]
+    ]
   },
   {
     name: 'locations.art gallery',
@@ -515,7 +515,7 @@ locations = [
       'locations.roles.music festival.drug dealer',
       'locations.roles.music festival.roadie',
       'locations.roles.music festival.security'
-      ]
+    ]
   },
   {
     name: 'locations.orgy',
@@ -543,7 +543,6 @@ locations = [
       'locations.roles.library.university student'
     ]
   },
-
   {
     name: 'locations.strip club',
     roles: [
